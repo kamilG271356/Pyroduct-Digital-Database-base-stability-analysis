@@ -173,7 +173,7 @@ else:
             # customdata[0] = row_index, customdata[1] = row_desc (nr profilu)
             row_nr, row_desc = point.get('customdata', [0, "0"])
             
-            with st.expander(f"Row: (Profil {row_desc})", expanded=True):
+            with st.expander(f"Profil {row_desc}", expanded=True):
                 c1, c2 = st.columns(2)
                 c1.metric("B [m] (X Axis)", f"{point['x']:.2f}")
                 c2.metric("Gravity Multiplier (Y Axis)", f"{point['y']:.4e}")
